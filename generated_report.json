@@ -1,0 +1,152 @@
+[
+  {
+    "variant": 1,
+    "email": {
+      "from": "\"Billing Department\" <no-reply@secure-verify-portal.net>",
+      "subject": "IT Password Reset Required",
+      "greeting": "Dear Alex Meier,",
+      "body": "Dear Alex Meier,\n\nOur records show your password will expire today. Reset it now to avoid being locked out of your account.\n\nPlease act immediately: [Reset Password Now](https://contoso.account-verify.com/login)\n\nThank you,\nBilling Department",
+      "link_text": "Reset Password Now",
+      "link_domain": "contoso.account-verify.com",
+      "claimed_company": "Contoso Corp"
+    },
+    "scoring": {
+      "flags_detected": [
+        "urgency_language",
+        "sender_domain_not_company_domain",
+        "suspicious_link_domain",
+        "generic_role_display_name",
+        "request_via_embedded_link"
+      ],
+      "flag_count": 5,
+      "total_rules_checked": 6,
+      "realism_score": 17,
+      "suggested_difficulty_tier": "easy (many obvious flags -- good for beginner training)"
+    }
+  },
+  {
+    "variant": 2,
+    "email": {
+      "from": "\"Billing Department\" <no-reply@account-alerts-service.com>",
+      "subject": "Action Required: Verify Your Account Access",
+      "greeting": "Dear User,",
+      "body": "Dear User,\n\nWe noticed unusual sign-in activity on your account. To keep your account secure, please verify your identity immediately.\n\nPlease act immediately: [Verify Account](https://contoso.account-verify.com/login)\n\nThank you,\nBilling Department",
+      "link_text": "Verify Account",
+      "link_domain": "contoso.account-verify.com",
+      "claimed_company": "Contoso Corp"
+    },
+    "scoring": {
+      "flags_detected": [
+        "generic_greeting",
+        "urgency_language",
+        "sender_domain_not_company_domain",
+        "suspicious_link_domain",
+        "generic_role_display_name",
+        "request_via_embedded_link"
+      ],
+      "flag_count": 6,
+      "total_rules_checked": 6,
+      "realism_score": 0,
+      "suggested_difficulty_tier": "easy (many obvious flags -- good for beginner training)"
+    }
+  },
+  {
+    "variant": 3,
+    "email": {
+      "from": "\"Account Security\" <no-reply@account-alerts-service.com>",
+      "subject": "IT Password Reset Required",
+      "greeting": "Dear Customer,",
+      "body": "Dear Customer,\n\nOur records show your password will expire today. Reset it now to avoid being locked out of your account.\n\nPlease act before your account is suspended: [Reset Password Now](https://contoso.account-verify.com/login)\n\nThank you,\nAccount Security",
+      "link_text": "Reset Password Now",
+      "link_domain": "contoso.account-verify.com",
+      "claimed_company": "Contoso Corp"
+    },
+    "scoring": {
+      "flags_detected": [
+        "generic_greeting",
+        "urgency_language",
+        "sender_domain_not_company_domain",
+        "suspicious_link_domain",
+        "generic_role_display_name",
+        "request_via_embedded_link"
+      ],
+      "flag_count": 6,
+      "total_rules_checked": 6,
+      "realism_score": 0,
+      "suggested_difficulty_tier": "easy (many obvious flags -- good for beginner training)"
+    }
+  },
+  {
+    "variant": 4,
+    "email": {
+      "from": "\"Contoso Corp\" <no-reply@contoso.com>",
+      "subject": "Action Required: Verify Your Account Access",
+      "greeting": "Dear User,",
+      "body": "Dear User,\n\nWe noticed unusual sign-in activity on your account. To keep your account secure, please verify your identity immediately.\n\nPlease act today: [Reset Password Now](https://contoso.com/login)\n\nThank you,\nContoso Corp",
+      "link_text": "Reset Password Now",
+      "link_domain": "contoso.com",
+      "claimed_company": "Contoso Corp"
+    },
+    "scoring": {
+      "flags_detected": [
+        "generic_greeting",
+        "urgency_language",
+        "request_via_embedded_link"
+      ],
+      "flag_count": 3,
+      "total_rules_checked": 6,
+      "realism_score": 50,
+      "suggested_difficulty_tier": "medium"
+    }
+  },
+  {
+    "variant": 5,
+    "email": {
+      "from": "\"Billing Department\" <no-reply@contoso.com>",
+      "subject": "Invoice Payment Overdue",
+      "greeting": "Dear Customer,",
+      "body": "Dear Customer,\n\nYour recent invoice payment has failed to process. Please update your payment details before your service is suspended.\n\nPlease act today: [Verify Account](https://contoso.account-verify.com/login)\n\nThank you,\nBilling Department",
+      "link_text": "Verify Account",
+      "link_domain": "contoso.account-verify.com",
+      "claimed_company": "Contoso Corp"
+    },
+    "scoring": {
+      "flags_detected": [
+        "generic_greeting",
+        "urgency_language",
+        "suspicious_link_domain",
+        "generic_role_display_name",
+        "request_via_embedded_link"
+      ],
+      "flag_count": 5,
+      "total_rules_checked": 6,
+      "realism_score": 17,
+      "suggested_difficulty_tier": "easy (many obvious flags -- good for beginner training)"
+    }
+  },
+  {
+    "variant": 6,
+    "email": {
+      "from": "\"Account Security\" <no-reply@secure-verify-portal.net>",
+      "subject": "Action Required: Verify Your Account Access",
+      "greeting": "Dear User,",
+      "body": "Dear User,\n\nWe noticed unusual sign-in activity on your account. To keep your account secure, please verify your identity immediately.\n\nPlease act before your account is suspended: [Update Payment Info](https://contoso.com/login)\n\nThank you,\nAccount Security",
+      "link_text": "Update Payment Info",
+      "link_domain": "contoso.com",
+      "claimed_company": "Contoso Corp"
+    },
+    "scoring": {
+      "flags_detected": [
+        "generic_greeting",
+        "urgency_language",
+        "sender_domain_not_company_domain",
+        "generic_role_display_name",
+        "request_via_embedded_link"
+      ],
+      "flag_count": 5,
+      "total_rules_checked": 6,
+      "realism_score": 17,
+      "suggested_difficulty_tier": "easy (many obvious flags -- good for beginner training)"
+    }
+  }
+]
